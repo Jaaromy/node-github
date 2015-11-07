@@ -1,0 +1,10 @@
+{
+  "name": "AzureFun",
+  "version": "0.0.1",
+  "description": "AzureFun",
+  "main": "server.js",
+  "author": {
+    "name": "Jaaromy Zierse",
+    "email": "tolerablebear@gmail.com"
+  }
+}
