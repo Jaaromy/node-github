@@ -1,1 +1,0 @@
-ssh $REMOTE_USERNAME@$REMOTE_MACHINE "cd /opt/node-github && git pull && npm install && pm2 restart nodegithub"

@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+   - 5.1
+
+env:
+   - secure: QlV71QsepZJN4E8nvTeP1FTZFK5pdwuDl7NMNLeunp/RAkMG2Mcx7/wLP0tu1rE4+Hjdp+TMuSyJvGLDOEhCt4PbEhbroZz6EjRrX4MyLwnIVvTdFmvt+61SLfprijCFElbtfeRQgpgNJYGv+iMEyfXHn08DGTcZudYMConhNsS59APsFdQFTCyKxQ7fXc4GZOwRnjyJZi9sBbz2UTNd8OZnxmBLn8s9IAHcdQZWS8CtGnruGloIGPTr22znH1KfvnpX27BKZmdQgfr0dW1ml6SVSfWs24iaajVaU2mCflPqH6T8jNFy9IO3aglT1nBJUFdUxbrf2jTkBk4rqc72Ag==
+
+# Deploy to remote machine
+after_script:
+   - if [ "$BRANCH" == "master" ]; then ssh $REMOTE_USERNAME@$REMOTE_MACHINE "cd $DEPLOY_DIRECTORY && git pull && npm install && pm2 restart $PM2_APP_NAME"; fi
