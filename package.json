@@ -1,6 +1,6 @@
 {
   "name": "node-github",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A web app for displaying commit info across all repositories.",
   "main": "server.js",
   "scripts": {
