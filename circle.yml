@@ -5,4 +5,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - bash -x deploy.sh
+       - echo "Deployed by shippable.com"
+      #- ssh $REMOTE_USERNAME@$REMOTE_MACHINE "cd $DEPLOY_DIRECTORY && git pull && npm install && pm2 restart $PM2_APP_NAME"
